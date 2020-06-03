@@ -16,9 +16,9 @@ app.use('*', function (req, res, next) {
 app.use(express.static('./public'))
 require('./routes/getTicket.route.js')(app)
 
-//使用https协议
+//使用https协议，就必须用域名调用api，用ip无效！
 const tlsOpt = {
-    pfx: fs.readFileSync(path.resolve('IIS/hugyoung.club.pfx')),//路径的最简洁写法
+    pfx: fs.readFileSync(path.resolve('private/IIS/hugyoung.club.pfx')),//路径的最简洁写法
     passphrase: 'v0dod0nf073'
 }
 const httpsServer = https.createServer(tlsOpt, app)

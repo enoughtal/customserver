@@ -12,6 +12,6 @@ function test(req, res, next) {
 }
 
 module.exports = function (app) {
-    app.post('/getTicket', getTicket)
+    // app.post('/getTicket', getTicket)
     app.post('/test', test)
 }
