@@ -1,0 +1,28 @@
+{
+  "name": "customserver",
+  "version": "1.0.0",
+  "description": "this is a custom server for tencent cloudbase and other tencent service",
+  "main": "index.js",
+  "dependencies": {
+    "@cloudbase/node-sdk": "^2.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enoughtal/customserver.git"
+  },
+  "keywords": [
+    "dl00071"
+  ],
+  "author": "chendan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enoughtal/customserver/issues"
+  },
+  "homepage": "https://github.com/enoughtal/customserver#readme"
+}
