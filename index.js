@@ -15,6 +15,10 @@ app.use('*', function (req, res, next) {
 })
 app.use(express.static('./public'))
 require('./routes/getTicket.route.js')(app)
+//错误处理路由
+app.use(function (err, req, res, next) {
+    res.json({ errMsg: err.message })
+})
 
 //使用https协议，就必须用域名调用api，用ip无效！
 const tlsOpt = {
